@@ -60,5 +60,8 @@
 
 # │       └── ci.yml
 
-# └── README.md
+└── README.md
+
+Projeto desenvolvido para demonstrar práticas DevOps com microsserviços, Docker e CI/CD.
+===
 
