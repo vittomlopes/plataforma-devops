@@ -1,30 +1,45 @@
 name: CI
 
+# Define quando o pipeline vai executar
 on:
+  # Executa quando enviar código para o GitHub
   push:
+    # Executa somente na branch main
     branches: [ "main" ]
+
+  # Executa quando abrir Pull Request para a branch main
   pull_request:
     branches: [ "main" ]
 
+# Lista de trabalhos do pipeline
 jobs:
+  # Trabalho chamado build
   build:
+    # O GitHub usa uma máquina Linux Ubuntu
     runs-on: ubuntu-latest
 
+    # Lista de passos do trabalho
     steps:
+      # Baixa o código do repositório
       - name: Baixar codigo
         uses: actions/checkout@v4
 
+      # Verifica se o compilador C está instalado
       - name: Verificar GCC
         run: gcc --version
 
+      # Compila o microsserviço de autenticação
       - name: Compilar auth-service
         run: gcc services/auth-service/main.c -o /tmp/auth-service
 
+      # Compila o microsserviço de tarefas
       - name: Compilar task-service
         run: gcc services/task-service/main.c -o /tmp/task-service
 
+      # Compila o microsserviço de notificações
       - name: Compilar notification-service
         run: gcc services/notification-service/main.c -o /tmp/notification-service
 
+      # Compila o API Gateway
       - name: Compilar gateway
         run: gcc gateway/main.c -o /tmp/gateway
