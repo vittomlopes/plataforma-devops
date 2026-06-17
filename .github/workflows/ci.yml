@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Testar auth-service
+        run: |
+          cd services/auth-service
+          pip install -r requirements.txt
+          python -m py_compile app.py
+
+      - name: Testar task-service
+        run: |
+          cd services/task-service
+          pip install -r requirements.txt
+          python -m py_compile app.py
+
+      - name: Testar notification-service
+        run: |
+          cd services/notification-service
+          pip install -r requirements.txt
+          python -m py_compile app.py
+
+      - name: Testar gateway
+        run: |
+          cd gateway
+          pip install -r requirements.txt
+          python -m py_compile app.py
