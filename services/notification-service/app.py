@@ -11,7 +11,7 @@ def list_notifications():
     return {
         "notifications": [
             {"id": 1, "message": "Nova atividade criada"},
-            {"id": 2, "message": "Prazo de entrega próximo"}
+            {"id": 2, "message": "Prazo de entrega proximo"}
         ]
     }
 
