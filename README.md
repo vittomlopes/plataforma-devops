@@ -62,6 +62,5 @@
 
 └── README.md
 
-Projeto desenvolvido para demonstrar práticas DevOps com microsserviços, Docker e CI/CD.
-===
+# O projeto foi implementado em linguagem C. Cada microsserviço possui main.c e Dockerfile usando GCC. O pipeline CI compila automaticamente todos os serviços com GitHub Actions.
 

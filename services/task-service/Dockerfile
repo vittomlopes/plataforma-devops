@@ -1,13 +1,11 @@
-FROM python:3.11-slim
+FROM gcc:13
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY main.c .
 
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
+RUN gcc main.c -o app
 
 EXPOSE 5002
 
-CMD ["python", "app.py"]
+CMD ["./app"]

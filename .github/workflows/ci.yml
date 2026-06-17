@@ -14,31 +14,17 @@ jobs:
       - name: Baixar codigo
         uses: actions/checkout@v4
 
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+      - name: Verificar GCC
+        run: gcc --version
 
-      - name: Testar auth-service
-        run: |
-          cd services/auth-service
-          pip install -r requirements.txt
-          python -m py_compile app.py
+      - name: Compilar auth-service
+        run: gcc services/auth-service/main.c -o /tmp/auth-service
 
-      - name: Testar task-service
-        run: |
-          cd services/task-service
-          pip install -r requirements.txt
-          python -m py_compile app.py
+      - name: Compilar task-service
+        run: gcc services/task-service/main.c -o /tmp/task-service
 
-      - name: Testar notification-service
-        run: |
-          cd services/notification-service
-          pip install -r requirements.txt
-          python -m py_compile app.py
+      - name: Compilar notification-service
+        run: gcc services/notification-service/main.c -o /tmp/notification-service
 
-      - name: Testar gateway
-        run: |
-          cd gateway
-          pip install -r requirements.txt
-          python -m py_compile app.py
+      - name: Compilar gateway
+        run: gcc gateway/main.c -o /tmp/gateway
