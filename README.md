@@ -1,50 +1,25 @@
-\# 🚀 Plataforma DevOps com Microsserviços
+# 🚀 Plataforma DevOps com Microsserviços
 
+<img src="https://img.shields.io/badge/Linguagem-C-blue">
+<img src="https://img.shields.io/badge/Docker-Container-blue">
+<img src="https://img.shields.io/badge/GitHub%20Actions-CI-green">
+<img src="https://img.shields.io/badge/Deploy-Render-purple">
+<img src="https://img.shields.io/badge/Status-Online-success">
 
+---
 
-!\[Linguagem](https://img.shields.io/badge/Linguagem-C-blue)
+## 📌 Projeto Final DevOps — Engenharia da Computação
 
-!\[Docker](https://img.shields.io/badge/Docker-Container-blue)
+Este projeto tem como objetivo construir uma **plataforma DevOps com microsserviços**, utilizando:
 
-!\[CI](https://img.shields.io/badge/GitHub%20Actions-CI-green)
-
-!\[Deploy](https://img.shields.io/badge/Deploy-Render-purple)
-
-!\[Status](https://img.shields.io/badge/Status-Online-success)
-
-
-
-\---
-
-
-
-\## 📌 Projeto Final DevOps — Engenharia da Computação
-
-
-
-Este projeto tem como objetivo construir uma \*\*plataforma DevOps com microsserviços\*\*, utilizando:
-
-
-
-\* Linguagem C
-
-\* Docker
-
-\* Docker Compose
-
-\* GitHub Actions
-
-\* Deploy no Render
-
-\* Health Checks
-
-\* Métricas básicas
-
-\* Documentação técnica
-
-
-
-\---
+* Linguagem C
+* Docker
+* Docker Compose
+* GitHub Actions
+* Deploy no Render
+* Health Checks
+* Métricas básicas
+* Documentação técnica
 
 
 
