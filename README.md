@@ -23,7 +23,7 @@ Este projeto tem como objetivo construir uma **plataforma DevOps com microsservi
 
 
 
-\## 🎯 Objetivo
+## 🎯 Objetivo
 
 
 
@@ -31,11 +31,11 @@ Criar uma aplicação baseada em microsserviços, aplicando práticas de DevOps,
 
 
 
-\---
+---
 
 
 
-\## 🧱 Arquitetura
+## 🧱 Arquitetura
 
 
 
@@ -57,11 +57,11 @@ O projeto possui os seguintes serviços:
 
 
 
-\---
+---
 
 
 
-\## 🔗 Deploy
+## 🔗 Deploy
 
 
 
@@ -99,15 +99,15 @@ https://plataforma-devops.onrender.com/metrics
 
 
 
-\---
+---
 
 
 
-\## 📡 Rotas da API
+## 📡 Rotas da API
 
 
 
-\### API Gateway
+### API Gateway
 
 
 
@@ -125,7 +125,7 @@ https://plataforma-devops.onrender.com/metrics
 
 
 
-\### Auth Service
+### Auth Service
 
 
 
@@ -141,7 +141,7 @@ https://plataforma-devops.onrender.com/metrics
 
 
 
-\### Task Service
+### Task Service
 
 
 
@@ -157,7 +157,7 @@ https://plataforma-devops.onrender.com/metrics
 
 
 
-\### Notification Service
+### Notification Service
 
 
 
@@ -173,11 +173,11 @@ https://plataforma-devops.onrender.com/metrics
 
 
 
-\---
+---
 
 
 
-\## 📊 Métricas básicas
+## 📊 Métricas básicas
 
 
 
@@ -213,11 +213,11 @@ Significado:
 
 
 
-\---
+---
 
 
 
-\## 🐳 Docker
+## 🐳 Docker
 
 
 
@@ -257,11 +257,11 @@ CMD \["./app"]
 
 
 
-\---
+---
 
 
 
-\## 🧩 Docker Compose
+## 🧩 Docker Compose
 
 
 
@@ -273,13 +273,13 @@ Serviços configurados:
 
 
 
-\* gateway
+* gateway
 
-\* auth-service
+* auth-service
 
-\* task-service
+* task-service
 
-\* notification-service
+* notification-service
 
 
 
@@ -297,11 +297,11 @@ docker compose up --build
 
 
 
-\---
+---
 
 
 
-\## ⚙️ Pipeline CI/CD
+## ⚙️ Pipeline CI/CD
 
 
 
@@ -325,9 +325,9 @@ O pipeline executa automaticamente quando acontece:
 
 
 
-\* push na branch `main`
+* push na branch `main`
 
-\* pull request para a branch `main`
+* pull request para a branch `main`
 
 
 
@@ -353,11 +353,11 @@ Quando tudo compila corretamente, o GitHub Actions mostra check verde.
 
 
 
-\---
+---
 
 
 
-\## 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 
 
@@ -417,11 +417,11 @@ plataforma-devops/
 
 
 
-\---
+---
 
 
 
-\## 📚 Documentação
+## 📚 Documentação
 
 
 
@@ -443,11 +443,11 @@ A documentação técnica está na pasta `docs`.
 
 
 
-\---
+---
 
 
 
-\## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas
 
 
 
@@ -471,7 +471,7 @@ A documentação técnica está na pasta `docs`.
 
 
 
-\## ✅ Status das Sprints
+## ✅ Status das Sprints
 
 
 
@@ -487,11 +487,11 @@ A documentação técnica está na pasta `docs`.
 
 
 
-\---
+---
 
 
 
-\## 👨‍💻 Autor
+## 👨‍💻 Autor
 
 
 
@@ -503,11 +503,11 @@ Projeto desenvolvido para a disciplina de Engenharia da Computação.
 
 
 
-\---
+---
 
 
 
-\## ✅ Conclusão
+## ✅ Conclusão
 
 
 
